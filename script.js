@@ -1,8 +1,9 @@
-document.addEventListener('DOMContentLoaded', () => {
+// This function runs the moment the window finishes loading everything
+window.onload = () => {
     const loader = document.getElementById('loader-wrapper');
     const portfolio = document.getElementById('main-portfolio');
 
-    // Force loader to disappear after 3 seconds
+    // Wait exactly 3 seconds, then hide loader and show site
     setTimeout(() => {
         if (loader) {
             loader.classList.add('loader-finished');
@@ -11,9 +12,9 @@ document.addEventListener('DOMContentLoaded', () => {
             portfolio.classList.add('show-portfolio');
         }
     }, 3000); 
-});
+};
 
-// Parallax/Tilt Effect for Desktop
+// Tilt Effect for Desktop only
 document.addEventListener('mousemove', (e) => {
     if (window.innerWidth > 768) {
         const x = (e.clientX / window.innerWidth - 0.5) * 5;
