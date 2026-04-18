@@ -26,10 +26,11 @@ body {
     transition: opacity 0.8s ease, visibility 0.8s;
 }
 
-/* This is the magic class that removes the loader */
+/* Force hidden state */
 .loader-finished {
     opacity: 0 !important;
     visibility: hidden !important;
+    pointer-events: none;
 }
 
 .loader-sketch-box {
@@ -92,7 +93,6 @@ body {
     transform: translateY(0) !important;
 }
 
-/* Profile Section Styles */
 .profile-hero { display: flex; align-items: center; gap: 2rem; border-bottom: 2px solid #ddd; padding-bottom: 2rem; }
 .profile-img { width: 180px; height: 180px; border: var(--border-heavy); object-fit: cover; }
 .mono { font-family: 'IBM Plex Mono', monospace; color: var(--pen-medium); }
