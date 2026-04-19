@@ -46,6 +46,9 @@
     margin-bottom: 1.5rem;
     position: relative;
     filter: drop-shadow(4px 4px 0px var(--pen-dark));
+    background-image: url('https://lh3.googleusercontent.com/d/1uGutGwLNFbIb7rr5xntGUof_rlbffbg3=s1000');
+    background-size: cover;
+    background-position: center;
     border: 2px solid var(--pen-dark);
     border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
     animation: liquidAnim 4s ease-in-out infinite;
